@@ -4,9 +4,9 @@ import { margin } from "@mui/system";
 import { Avatar, Button, Container, createTheme, ThemeProvider, Typography } from "@mui/material";
 // import ButtonCmp from "../Components/MuiComponents/ButtonCmp";
 import {useState}  from "react";
-import { auth, db } from "../firebase";
+import { auth, db,} from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import {collection,addDoc} from "firebase/firestore"
+import {collection,addDoc,setDoc,doc } from "firebase/firestore"
 import {useNavigate} from "react-router-dom"
 import React, { useEffect} from "react";
 export default function SignUp({ label, placeholder, onChange, style }) {
@@ -39,10 +39,11 @@ const dbCollection=collection(db,"users")
         const obj={
           fullname,
           email,
-          password 
+          password, 
+          uid:resolve.user.uid,
         }
-
-        await addDoc(dbCollection,obj)
+          await setDoc(doc(db,"users",resolve.user.uid,),obj);
+        // await addDoc(dbCollection,obj)
         navigate("/")
     })
     .catch(error=>{
