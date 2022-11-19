@@ -7,19 +7,25 @@ import Product from "./Pages/Product";
 import Pricing from "./Pages/Pricing";
 import Blog from "./Pages/Blog";
 import Home from "./Pages/Home";
+import SignUp from "./Pages/SignUp";
+import Login from "./Pages/Login";
+import ProtectedRoute from "./ProtectedRoute";
 
 function App() {
-  const onClick1 = () => {
-    console.log("Account function");
-  };
   return (
     <>
       <AppBarCmp />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/signup" element={<SignUp />} />
+
+     <Route element={<ProtectedRoute/>}>
+        <Route path="/home" element={<Home />} />
+      </Route>
+
+        <Route path="/" element={<Login/>} />
       </Routes>
     </>
   );

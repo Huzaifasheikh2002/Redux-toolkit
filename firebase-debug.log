@@ -1,0 +1,31 @@
+[debug] [2022-11-18T16:37:27.178Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T16:37:27.182Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-18T16:37:27.183Z] CLI Version:   10.1.2
+[debug] [2022-11-18T16:37:27.183Z] Platform:      win32
+[debug] [2022-11-18T16:37:27.183Z] Node Version:  v16.13.2
+[debug] [2022-11-18T16:37:27.185Z] Time:          Fri Nov 18 2022 21:37:27 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-11-18T16:37:27.185Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T16:37:27.351Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T16:37:27.352Z] > authorizing via signed-in user (huzaifanadeem621@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\REACT folders\REACT-REDUX-TOOLKIT\Redux-toolkit
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-11-18T16:37:45.818Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:215:13)
+    at process.listener (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:390:28)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -63,9 +63,26 @@ function AppBarCmp() {
         navigate("/");
       },
     },
+   
     {
+      name: "SignIn",
+      onClick: () => {
+        navigate("/signup");
+      },
+    },
+    {
+      name: "LogIn",
+      onClick: () => {
+        navigate("/");
+      },
+    },
+    {
+      
       name: "Logout",
-      onClick: logout,
+      onClick:(logoutHandler) => {
+        localStorage.removeItem("uid");
+        navigate("/");
+      },
     },
   ];
 

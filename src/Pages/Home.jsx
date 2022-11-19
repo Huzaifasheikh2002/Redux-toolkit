@@ -8,7 +8,7 @@ import InputCmp from "../Components/MuiComponents/InputCmp";
 import { fetchProduct } from "../store/ProductSlice";
 
 const Home = () => {
- 
+  
   const dispatch =useDispatch();
   const {data,status}=useSelector((state)=>state.products);
     useEffect(()=>{
@@ -26,6 +26,8 @@ console.log("home data",data);
       px:"20px",
      }}
       >
+  <InputCmp/>
+        
       <Typography variant="h6">HUZAIFA</Typography>
 
   <Grid container columnSpacing={2}>

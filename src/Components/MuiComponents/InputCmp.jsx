@@ -3,8 +3,10 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 export default function InputCmp({ label, placeholder, onChange, style }) {
-  return (
+  return (<>
+
     <TextField
+
       id="outlined-basic"
       label={label ? label : "Outlined"}
       variant="outlined"
@@ -14,5 +16,5 @@ export default function InputCmp({ label, placeholder, onChange, style }) {
         input: style,
       }}
     />
-  );
+  </>);
 }
