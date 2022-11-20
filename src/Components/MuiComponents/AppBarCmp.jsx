@@ -17,8 +17,8 @@ import Cart from "./CartCmp";
 
 const pages = [
   { name: "Products", href: "/product" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/about" },
 ];
 
 function AppBarCmp() {
@@ -108,7 +108,7 @@ function AppBarCmp() {
               },
             }}
           >
-            <Link to="/">APPBAR</Link>
+            <Link to="/">HUZAIFA WEB</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -188,7 +188,7 @@ function AppBarCmp() {
           <Box sx={{mx:"25px",
         
           }}>
-          <Cart/>
+          {/* <Cart/> */}
 
           </Box>
 

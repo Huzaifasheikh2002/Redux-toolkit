@@ -6,7 +6,8 @@ const Product = () => {
   return (
     <div>
       <Typography variant="h1">Product PAGE</Typography>
-      <ButtonCmp text="View Product" />
+      {/* <ButtonCmp text="View Product" /> */}
+      
     </div>
   );
 };

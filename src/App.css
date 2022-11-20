@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,97 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+.header{
+  /* background-image: url(./IMAGES/Background-Img.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+ height: 650px;
+ width: 100%;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+li{
+  display: inline-block;
+  /* padding: 70px; */
+  margin: 40px;
+  font-weight: 400; 
+}
+/* Cards Section */
+.BlackCards{
+  text-align: center;
+  /* position: absolute; */
+  width: 270px;
+  height: 400px;
+background-color: #161414;
+line-height: 40px;
+padding: 40px;
+margin: 33px;
+display: inline-block;
+
+position: relative;
+bottom: 200px;
+}
+.BlackCards h3{
+  color: rgb(6, 115, 241);
+  font-size: larger;
+  }
+.BlackCards p{
+   color:rgba(255, 255, 255, 0.718);
+   font-weight: 400;
+    }
+.BlackCards small{
+    color:rgba(255, 255, 255, 0.718);  
+ }
+ 
+ .BodyCard1{
+  width: 20%;
+  text-align: center;
+display: inline-block;
+  
+margin: 70px;
+  line-height: 23px;
+  position: relative;
+ bottom: 100px;
+ }
+ 
+ 
+ .graphImg{
+margin-left: 40px;
+bottom: 150px;
+position: relative;
+ }
+/* 
+ .footer p{
+  display: inline-block;
+  padding-left: 10px;
+ }
+ .footer {
+ display: inline-block;
+ }
+ .footer input{
+  margin: 10px;
+ } */
+ .footer2{
+  display: inline-block;
+ }
+.mainFooter{
+  margin-top: 200px;
+  height: 300px;
+  width: 100%;
+  padding: 100px;
+display: flex;
+justify-content: space-around;
+  color: beige;
+  background-color: #1976D2
+}
+
+

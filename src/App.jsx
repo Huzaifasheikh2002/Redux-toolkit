@@ -4,21 +4,22 @@ import { Typography } from "@mui/material";
 import AppBarCmp from "./Components/MuiComponents/AppBarCmp";
 import { Routes, Route } from "react-router-dom";
 import Product from "./Pages/Product";
-import Pricing from "./Pages/Pricing";
-import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
+// import Blog from "./Pages/Blog";
 import Home from "./Pages/Home";
 import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./ProtectedRoute";
+import About from "./Pages/About";
 
-function App() {
+function App() {  
   return (
     <>
       <AppBarCmp />
       <Routes>
         <Route path="/product" element={<Product />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUp />} />
 
      <Route element={<ProtectedRoute/>}>

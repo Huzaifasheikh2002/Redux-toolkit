@@ -33,9 +33,12 @@ extraReducers:(builder)=>{
 const {reducer} = ProductSlice;
 
 export const fetchProduct = createAsyncThunk("products/fetch", async ()=>{
-const data = await fetch("https://fakestoreapi.com/products");
-const products =await data.json();
-console.log(products,"products");
-return products;
+// const data = await fetch("https://fakestoreapi.com/products");
+// const data = await fetch("'https://myfakeapi.com/api/cars'");
+
+
+// const products =await data.json();
+// console.log(products,"products");
+// return products;
 });
 export default reducer;

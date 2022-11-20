@@ -76,7 +76,7 @@ if(user){
               autoComplete="email"
               autoFocus
               sx={{
-                width:500,
+                width:350,
                margin:"20px",
                display:"block",
                    
@@ -96,7 +96,7 @@ if(user){
               id="password"
               autoComplete="current-password"
               sx={{
-             width:500,
+             width:350,
             margin:"20px",
             display:"block",
                 
@@ -105,9 +105,11 @@ if(user){
 
           <Button
            type="submit"
-              fullWidth
+              // fullWidth
              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{
+                mt: 3, mb: 2, ml:3 
+                }}
             >
           Login 
          </Button>

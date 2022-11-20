@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { margin } from "@mui/system";
-import { Avatar, Button, Container, createTheme, ThemeProvider, Typography } from "@mui/material";
+import { Avatar, Button, Container,    Typography } from "@mui/material";
 // import ButtonCmp from "../Components/MuiComponents/ButtonCmp";
 import {useState}  from "react";
 import { auth, db,} from "../firebase";
@@ -55,7 +55,7 @@ const dbCollection=collection(db,"users")
 
 
 
-const theme = createTheme();
+// const theme = createTheme();
 
 
 
@@ -63,7 +63,7 @@ const theme = createTheme();
 
 
 return (<>
- <ThemeProvider theme={theme}>
+ 
 
       <Container component="main" maxWidth="xs">
       <Box
@@ -95,7 +95,7 @@ return (<>
         input: style,
         display:"block",
         margin:"20px",
-        width:500,
+        width:200,
         
       }}
          /> */}
@@ -114,7 +114,7 @@ return (<>
               autoComplete="name"
               autoFocus
               sx={{
-                width:500,
+                width:350,
                margin:"20px",
                display:"block",
                    
@@ -135,7 +135,7 @@ return (<>
               autoComplete="email"
               autoFocus
               sx={{
-                width:500,
+                width:350,
                margin:"20px",
                display:"block",
                    
@@ -155,7 +155,7 @@ return (<>
               id="password"
               autoComplete="current-password"
               sx={{
-             width:500,
+             width:350,
             margin:"20px",
             display:"block",
                 
@@ -164,9 +164,13 @@ return (<>
 
 <Button
               type="submit"
-              fullWidth
+          
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ 
+              // alignItemscenter  
+                mt: 3, mb: 2, ml:3 
+              
+              }}
             >
               Sign In
             </Button>
@@ -175,7 +179,7 @@ return (<>
             </Box>
         
       </Container>
-      </ThemeProvider>
+      
 {/* <ButtonCmp/> */}
 
   </>);

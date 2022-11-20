@@ -29,3 +29,50 @@ Before we get started, keep in mind:
     at process.emit (node:events:390:28)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2022-11-20T03:46:28.338Z] ----------------------------------------------------------------------
+[debug] [2022-11-20T03:46:28.343Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-20T03:46:28.344Z] CLI Version:   10.1.2
+[debug] [2022-11-20T03:46:28.344Z] Platform:      win32
+[debug] [2022-11-20T03:46:28.345Z] Node Version:  v16.13.2
+[debug] [2022-11-20T03:46:28.347Z] Time:          Sun Nov 20 2022 08:46:28 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-11-20T03:46:28.347Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-20T03:46:28.352Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-20T03:46:28.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-20T03:46:28.547Z] > authorizing via signed-in user (huzaifanadeem621@gmail.com)
+[debug] [2022-11-20T03:46:28.547Z] [iam] checking project reduxxtoolkit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-20T03:46:28.550Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-11-20T03:46:28.551Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-20T03:46:29.943Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-11-20T03:46:29.944Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-11-20T03:46:30.131Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 20 Nov 2022 03:46:42 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-20T03:46:30.153Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/reduxxtoolkit:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-20T03:46:31.740Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 20 Nov 2022 03:46:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1212","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-20T03:46:31.743Z] > refreshing access token with scopes: []
+[debug] [2022-11-20T03:46:31.743Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-20T03:46:32.140Z] <<< HTTP RESPONSE 200 {"date":"Sun, 20 Nov 2022 03:46:44 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-20T03:46:32.158Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reduxxtoolkit [none]
+[debug] [2022-11-20T03:46:32.855Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reduxxtoolkit 200
+[debug] [2022-11-20T03:46:32.855Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reduxxtoolkit {"projectId":"reduxxtoolkit","projectNumber":"812832343004","displayName":"ReduxxToolkit","name":"projects/reduxxtoolkit","resources":{"hostingSite":"reduxxtoolkit"},"state":"ACTIVE","etag":"1_e86a1bd4-de3e-4e64-88f6-0bf1f3d9328c"}
+[info] 
+[info] === Deploying to 'reduxxtoolkit'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-11-20T03:46:32.861Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-11-20T03:46:32.861Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-20T03:46:33.581Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 20 Nov 2022 03:46:45 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-20T03:46:33.597Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/reduxxtoolkit/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-11-20T03:46:46.586Z] Error: socket hang up
+    at connResetException (node:internal/errors:691:14)
+    at TLSSocket.socketOnEnd (node:_http_client:471:23)
+    at TLSSocket.emit (node:events:402:35)
+    at TLSSocket.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Server Error. socket hang up

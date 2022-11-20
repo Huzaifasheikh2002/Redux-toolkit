@@ -8,12 +8,14 @@ export default function InputCmp({ label, placeholder, onChange, style }) {
     <TextField
 
       id="outlined-basic"
-      label={label ? label : "Outlined"}
+      label={label ? label : "Search Vehicle"}
       variant="outlined"
       placeholder={placeholder || "enter your placeholder"}
       onChange={onChange}
       sx={{
         input: style,
+        width:550,
+            margin:"20px",
       }}
     />
   </>);
